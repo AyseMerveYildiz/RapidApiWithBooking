@@ -1,0 +1,40 @@
+﻿.hotel-search-box {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem 3rem;
+    max-width: 700px;
+    margin: 4rem auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+    .hotel-search-box h2 {
+        text-align: center;
+        font-size: 1.8rem;
+        color: #0077cc;
+        margin-bottom: 1.5rem;
+    }
+
+    .hotel-search-box label {
+        font-weight: 500;
+        color: #333;
+    }
+
+    .hotel-search-box input {
+        border-radius: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .hotel-search-box .btn-primary {
+        background-color: #0077cc;
+        border: none;
+        margin-top: 1rem;
+        padding: 0.75rem;
+        transition: 0.3s ease;
+        border-radius: 0.5rem;
+    }
+
+        .hotel-search-box .btn-primary:hover {
+            background-color: #005fa3;
+            transform: translateY(-2px);
+        }

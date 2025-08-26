@@ -1,0 +1,38 @@
+﻿@model RapidApiWithBooking.Models.HotelDetailViewModel
+
+@{
+    ViewData["Title"] = "Otel Detayı";
+    Layout = "~/Views/Shared/_HotelLayout.cshtml";
+}
+
+<section class="container py-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="@Model.CoverImageURL" alt="@Model.HotelName" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-md-6">
+            @if (!string.IsNullOrEmpty(Model.HotelName) && Model.HotelName != "İsim yok")
+            {
+                <h2>@Model.HotelName</h2>
+            }
+            <p><strong>Konum:</strong> @Model.City</p>
+            <p><strong>Adres:</strong> @Model.Address</p>
+            <p><strong>Fiyat:</strong> @Model.Price</p>
+            <p><strong>Puan:</strong> @Model.ReviewScore (@Model.ReviewScoreWord) - @Model.ReviewCount Yorum</p>
+
+            <a href="https://www.google.com/maps/search/@(Model.Address ?? Model.City)" target="_blank" class="btn btn-outline-primary mt-3">
+                <i class="fa fa-map-marker-alt"></i> Google Maps'te Aç
+            </a>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrWhiteSpace(Model.Description))
+    {
+        <div class="row mt-5">
+            <div class="col">
+                <h4>Otel Hakkında</h4>
+                <p class="text-muted">@Model.Description</p>
+            </div>
+        </div>
+    }
+</section>
