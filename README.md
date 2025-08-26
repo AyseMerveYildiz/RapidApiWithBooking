@@ -75,4 +75,4 @@ git clone https://github.com/AyseMerveYildiz/RapidApiWithBooking.git
 ## 👩‍💻 Geliştirici  
 
 **Ayşe Merve Yıldız**  
-🔗 [GitHub](https://github.com/AyseMerveYildiz) | 🔗 [LinkedIn](#)  
+🔗 [GitHub](https://github.com/AyseMerveYildiz) | 🔗 [LinkedIn](https://www.linkedin.com/in/aysemerveyildiz)  
